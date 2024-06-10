@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>학교 인증</title>
+    <link rel="stylesheet" href="html_font.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>학교 인증</h1>
+    <button onclick="showEmailInput()">학교 웹 메일로 인증하기</button>
+    <button>졸업 증명서로 인증하기</button>
+
+    <div id="email-verification" style="display: none;">
+        <input type="text" id="email" placeholder="이메일 입력 (예: user1@g.dongseo.ac.kr)">
+        <button onclick="verifyEmail()">학교 인증</button>
+    </div>
+
+    <script>
+        function showEmailInput() {
+            document.getElementById('email-verification').style.display = 'block';
+        }
+
+        function verifyEmail() {
+            var email = document.getElementById('email').value;
+            // 이메일 인증 로직을 추가하세요.
+            // 예시: AJAX를 사용하여 서버에 이메일을 전송하고 응답을 처리합니다.
+        }
+    </script>
+</body>
+</html>

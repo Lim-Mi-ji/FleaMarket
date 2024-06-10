@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>학교 인증</title>
+    <link rel="stylesheet" href="html_font.css" />
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showEmailInput() {
+            document.getElementById('email-auth').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>학교 인증</h1>
+    <div class="auth-options">
+        <button onclick="showEmailInput()">학교 웹 메일로 인증하기</button>
+        <button>졸업 증명서로 인증하기</button>
+    </div>
+    <div id="email-auth" style="display: none;">
+        <form action="school_auth.php" method="POST">
+            <input type="email" name="email" placeholder="이메일 입력 (ex.user1@g.dongseo.ac.kr)" required>
+            <button type="submit">학교 인증</button>
+        </form>
+    </div>
+
+    <script>
+        function openVerifyPopup() {
+            window.open('verify.html', '학교 인증', 'width=500,height=600');
+        }
+    </script>
+</body>
+</body>
+</html>

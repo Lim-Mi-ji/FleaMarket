@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+header > a {
+    color: white;
+    font-size: 16px;
+}
+
+.search-form {
+    padding: 10px;
+    display: flex;
+    flex-grow: 0.9;
+}
+
+#search-bar {
+    margin-top: 10px;
+    padding: 5px;
+    width: 70%;
+    flex-grow: 1;
+}
+
+.search-button {
+    margin-top: 10px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+a {
+    padding: 5px;
+    text-decoration: none;
+}
+
+aside {
+    width: 25%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 60px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 10px 0;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+aside ul li:hover {
+    background-color: #818483;
+    color: white;
+}
+
+main {
+    width: 80%;
+    margin-top: 60px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.promo-banner {
+    background-color: #e9ecef;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+}
+
+.product-item p {
+    color: #007b5e;
+    font-size: 1.2em;
+}

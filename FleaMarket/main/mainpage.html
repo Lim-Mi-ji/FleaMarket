@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>FleaMarket</title>
+    <link rel="stylesheet" href="html_font.css" />
+    <link rel="stylesheet" href="mainstyles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">FleaMarket</div>
+                <form action="../product/search_results.php" method="GET">
+                    <input type="text" class="search-bar" name="query" placeholder="상품명을 입력하세요" required>
+                    <button type="submit" class="search-button">🔍</button>
+                </form>
+            <div class="user-options">
+                <a href="../auth/login.html">로그인</a>
+                <a href="../auth/sign_up.php">회원가입</a>
+                <a href="mypage.php">마이페이지</a>
+                <a href="../product/product_upload.html">상품 등록</a>
+            </div>
+        </div>
+    </header>
+
+    <div style="align-items: flex-start; margin: 10px;">
+        <button class="menu-button">☰ 전체 카테고리</button>
+    </div>
+
+    <nav class="main-nav">
+        <div class="banner">
+            <button class="banner-arrow">«</button>
+            <div class="banner-image">
+                <img style="border: 1px dashed #ccc;" src="university_logo/banner.png">
+            </div>
+            <button class="banner-arrow">»</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main_product">
+            <section class="university-products">
+                <h2>학교별 상품</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img class="uni_logo_icon" src="university_logo/dongseo.png">
+                        <div class="product-info">
+                            <div class="university-logo"></div>
+                            <div class="university-name">동서대학교</div>
+                            <div class="product-count">nnn개</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img class="uni_logo_icon" src="university_logo/chungkang.png">
+                        <div class="product-info">
+                            <div class="university-logo"></div>
+                            <div class="university-name">청강대학교</div>
+                            <div class="product-count">nnn개</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img class="uni_logo_icon" src="university_logo/kungpook.png">
+                        <div class="product-info">
+                            <div class="university-logo"></div>
+                            <div class="university-name">경북대학교</div>
+                            <div class="product-count">nnn개</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img class="uni_logo_icon" src="university_logo/pukyong.png">
+                        <div class="product-info">
+                            <div class="university-logo"></div>
+                            <div class="university-name">부경대학교</div>
+                            <div class="product-count">nnn개</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img class="uni_logo_icon" src="university_logo/yonsei.png">
+                        <div class="product-info">
+                            <div class="university-logo"></div>
+                            <div class="university-name">연세대학교</div>
+                            <div class="product-count">nnn개</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img class="uni_logo_icon" src="university_logo/silla.png">
+                        <div class="product-info">
+                            <div class="university-logo"></div>
+                            <div class="university-name">신라대학교</div>
+                            <div class="product-count">nnn개</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img class="uni_logo_icon" src="university_logo/mokwon.png">
+                        <div class="product-info">
+                            <div class="university-logo"></div>
+                            <div class="university-name">목원대학교</div>
+                            <div class="product-count">nnn개</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img class="uni_logo_icon" src="university_logo/toronto.png">
+                        <div class="product-info">
+                            <div class="university-logo"></div>
+                            <div class="university-name">토론토대학교</div>
+                            <div class="product-count">nnn개</div>
+                        </div>
+                    </div>
+                </div>
+                <span><a class="more" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#ccc">
+                            <path
+                                d="M383-480 200-664l56-56 240 240-240 240-56-56 183-184Zm264 0L464-664l56-56 240 240-240 240-56-56 183-184Z" />
+                        </svg>
+                        더보기</a></span>
+            </section>
+        </div>
+        <section class="university-products">
+            <h2>등록된 상품</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img class="uni_logo_icon" src="product_logo/computer_tablet_pen.png">
+                    <div class="product-info">
+                        <div class="university-logo"></div>
+                        <div class="university-name">전자기기</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="uni_logo_icon" src="product_logo/book_tate.png">
+                    <div class="product-info">
+                        <div class="university-logo"></div>
+                        <div class="university-name">전공책</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="uni_logo_icon" src="product_logo/fashion_shirt1_white.png">
+                    <div class="product-info">
+                        <div class="university-logo"></div>
+                        <div class="university-name">남성의류</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="uni_logo_icon" src="product_logo/cloth_skirt.png">
+                    <div class="product-info">
+                        <div class="university-logo"></div>
+                    <div class="university-name">여성의류</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="uni_logo_icon" src="product_logo/medical_rihabiri_shoes.png">
+                    <div class="product-info">
+                        <div class="university-logo"></div>
+                    <div class="university-name">신발</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="uni_logo_icon" src="product_logo/makeup_lipgloss.png">
+                    <div class="product-info">
+                        <div class="university-logo"></div>
+                    <div class="university-name">뷰티/미용</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="uni_logo_icon" src="product_logo/food_zei1_seisen.png">
+                    <div class="product-info">
+                        <div class="university-logo"></div>
+                    <div class="university-name">식품</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="uni_logo_icon" src="product_logo/etc.png">
+                    <div class="product-info">
+                        <div class="university-logo"></div>
+                    <div class="university-name">기타</div>
+                    </div>
+                </div>
+                <span><a class="more" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#ccc">
+                            <path
+                                d="M383-480 200-664l56-56 240 240-240 240-56-56 183-184Zm264 0L464-664l56-56 240 240-240 240-56-56 183-184Z" />
+                        </svg>
+                        더보기</a></span>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <div class="sidebar-section">찜한 상품 <span>0</span></div>
+        <div class="sidebar-section">최근 본 상품</div>
+        <div class="recent-products">최근 본 상품이 없습니다.</div>
+        <div class="sidebar-section"><button>맨 위로 이동 ↑</button></div>
+    </aside>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#">팀 소개</a> |
+                <a href="#">이용약관</a> |
+                <a href="#">개인정보처리방침</a> |
+                <a href="#">고객 문의</a> |
+                <a href="#">© copyright</a>
+            </div>
+            <div class="footer-logo">FleaMarket</div>
+        </div>
+    </footer>
+</body>
+
+</html>

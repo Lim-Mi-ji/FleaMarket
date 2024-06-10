@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 업로드</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="upload_style.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <div>
+                <h2 class="product_information">상품정보</h2>
+            </div>
+            <div class="product_image_container">
+                <h5 class="product_image_text">상품이미지</h5>
+                <form id="imageForm" enctype="multipart/form-data" action="upload.php"
+                    method="post">
+                    <input type="file" id="imageInput" name="product_image" accept="image/*" required>
+                    <img id="previewImage" src="add_icon.svg" alt="add img" />
+            </div>
+            <div class="product_name_container">
+                <h5 class="product_name_text">상품명</h5>
+                <input placeholder="상품명을 입력해주세요." id="product_name" name="product_name" maxlength="40" required>
+                <h5 style="margin:0 0 0 10px">40자 이내</h5>
+            </div>
+            <div class="product_name_container">
+                <h5 class="product_price">가격</h5>
+                <input placeholder="상품의 가격을 입력해주세요." id="product_price" name="price" type="number" step="0.01" required>
+                <h5 style="margin:0 0 0 10px">원</h5>
+            </div>
+            <div class="product_name_container">
+                <h5 class="product_name_text">카테고리</h5>
+                <label for="categories" class="categories"></label>
+                <select id="category" name="category" required>
+                    <option value="여성의류">여성의류</option>
+                    <option value="남성의류">남성의류</option>
+                    <option value="신발">신발</option>
+                    <option value="디지털">디지털</option>
+                    <option value="전공서적">전공서적</option>
+                    <option value="뷰티/미용">뷰티/미용</option>
+                    <option value="식품">식품</option>
+                </select>
+            </div>
+            <div class="product_name_container">
+                <h5 class="product_condition">상품상태 </h5>
+                <div class="product_condition_select">
+                    <label>
+                        <input name="condition" value="새 상품" type="checkbox">
+                        새 상품(미사용)
+                    </label>
+                    <label>
+                        <input name="condition" value="사용감 없음" type="checkbox">
+                        사용감 없음
+                    </label>
+                    <label>
+                        <input name="condition" value="사용감 적음" type="checkbox">
+                        사용감 적음
+                    </label>
+                    <label>
+                        <input name="condition" value="사용감 많음" type="checkbox">
+                        사용감 많음
+                    </label>
+                    <label>
+                        <input name="condition" value="고장/파손상품" type="checkbox">
+                        고장/파손 상품
+                    </label>
+                </div>
+            </div>
+            <div class="product_name_container">
+                <h5 class="product_name_text">상품설명</h5>
+                <textarea placeholder="상품설명을 입력해주세요." id="product_descriptions" name="description" maxlength="500"
+                    required></textarea>
+            </div>
+            <div id="button">
+                <input type="submit" class="register_button" value="등록">
+            </div>
+        </header>
+    </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>

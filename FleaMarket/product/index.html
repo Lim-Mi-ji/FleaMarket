@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑몰</title>
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+    <header>
+        <form action="search_results.php" method="GET" class="search-form">
+            <input type="text" id="search-bar" name="query" placeholder="상품명을 입력하세요" required>
+            <button type="submit" class="search-button">🔍</button>
+        </form>
+        <a href="../../main/mypage.php">마이페이지</a>
+    </header>
+    <aside>
+        <h2>카테고리</h2>
+        <ul>
+            <li>여성 의류</li>
+            <li>남성 의류</li>
+            <li>신발</li>
+            <li>디지털 </li>
+            <li>예술/수집품</li>
+            <li>뷰티/미용</li>
+            <li>식품</li>
+        </ul>
+    </aside>
+    <main>
+        <section class="promo-banner">
+            <h2>특가 상품</h2>
+        </section>
+        <section class="product-grid">
+            <article class="product-item">
+                <img src="product3.jpg" alt="상품 1">
+                <h3>태블릿 PC</h3>
+                <p>₩700000</p>
+            </article>
+            <article class="product-item">
+                <img src="product2.jpg" alt="상품 2">
+                <h3>초록 니트</h3>
+                <p>₩10000</p>
+            </article>
+            <article class="product-item">
+                <img src="product1.jpg" alt="상품 3">
+                <h3>MATLAB으로 배우는 선형대수학</h3>
+                <p>₩19000</p>
+            </article>
+            <!-- 상품 추가 -->
+        </section>
+    </main>
+</body>
+</html>
